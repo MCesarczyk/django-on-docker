@@ -28,7 +28,7 @@ DEBUG = bool(os.environ.get('DEBUG', default=0))
 
 ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', default='').split(' ')
 
-CSRF_TRUSTED_ORIGINS = os.environ.get('CSRF_TRUSTED_ORIGINS', default='').split(' ')
+CSRF_TRUSTED_ORIGINS = os.environ.get('CSRF_TRUSTED_ORIGINS', default=['']).split(' ')
 
 # Application definition
 
